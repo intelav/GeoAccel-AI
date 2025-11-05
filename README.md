@@ -18,13 +18,14 @@ Supported object classes:
 
 | Stage | Description |
 | ------ | ------------ |
-| **Prototype Creation** | `create_features_dino.py` extracts DINOv2 feature vectors from annotated `.json` polygons (ground truth). |
-| **Batch Prototype Builder** | `batch_create_dino_prototypes.sh` creates prototypes for all TIF + JSON pairs (101 in total across 8 classes). |
-| **Auto-Annotation (GPU Optimized)** | `auto_annotate_dino_nvtx_optimized.py` performs window-based detection using DINOv2 embeddings, cosine similarity search, and SAM2 refinement for detected bounding boxes. |
-| **Batch Detection** | `batch_auto_annotate_dino.sh` runs the optimized annotator across 150 images, detects all 8 object types, and saves bounding boxes in CSV format. |
-| **Model Training** | YOLOv8 model trained on detected bounding boxes; used as a region proposal network (RPN) for refinement. |
-| **Final Visual Search** | DINOv2 embeddings + cosine similarity label the new search regions to find query objects. |
-| **Interactive Review UI** | `ui_review.py` enables OpenCV-based visual verification, class editing, and YOLO export. |                                            |
+| **Prototype Creation** |  Extracts proprietary feature embeddings from annotated `.json` polygons (ground truth). |
+| **Batch Prototype Builder** |  Builds class prototypes across all TIF + JSON pairs. |
+| **Auto-Annotation (GPU Optimized)** |  Performs multi-scale window detection using embedding similarity search and segmentation-based refinement for detected regions. |
+| **Batch Detection** |  Executes large-scale annotation runs across hundreds of satellite tiles, generating object-level metadata. |
+| **Model Training** | YOLOv8-based detection fine-tuned on discovered regions; used as a region proposal network (RPN) for refinement. |
+| **Final Visual Search** | Embedding-based similarity retrieval to identify query objects in unseen images. |
+| **Interactive Review UI** | Provides OpenCV-based annotation validation, class editing, and YOLO export tools. |
+                                         |
 
 ---
 ## Yolo Model Training 
