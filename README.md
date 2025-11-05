@@ -36,13 +36,15 @@ Since the extracted embeddings contain a degree of variability, moderate precisi
 
 ## ⚙️ GPU Profiling & Agentic Optimization
 Integrated with **Nsight Systems**, **Nsight Compute**, and **Torch Profiler** for kernel-level insights, enabling precise GPU workload tuning.
-Includes experimental support for **Agentic GPU Optimization**, orchestrating autotuning of CUDA kernels and Triton ops for real-time efficiency gains on **RTX 3060** .
+Includes experimental support for **Agentic GPU Optimization**, orchestrating autotuning of CUDA kernels and Triton ops for real-time efficiency gains on **RTX 3060*.
 
-![Initial Profiling Report](profiling/report.png)
+![Initial Profiling Report](profiling/report.png) 
 *Figure 2: Initial Profiling Report on RTX3060 (12GB).*
+
 
 ![Optimized Profiling Report](profiling/report_optimized.png)
 *Figure 3: Optimized Profiling Report on RTX3060 (12GB).*
+
 ---
 
 ## 🖼️ Results
