@@ -1,17 +1,18 @@
-# ⚡ DINO-SAM-Accel: GPU-Optimized Geospatial Annotation
+# ⚡ GeoAccel-AI: GPU-Optimized Geospatial Annotation
 
-**Accelerating Geospatial Intelligence through distillation,segmentation and GPU Optimization.**
-This project unites self-supervised embeddings from  **DINOv2** (distillation model)  and **Segment Anything 2 (SAM2)** (segmentation model) polygon refinement for the detected bounding box of those embeddings — all optimized for GPU-accelerated annotation and enables visual search in high-resolution (3m) satellite imagery.
+**Accelerating Geospatial Intelligence through distillation, segmentation, and proprietary embeddings.**  
+Developed under the **SvarAikyam AI / AI Fusion** initiative, this project integrates deep visual distillation models, segmentation refinement, and GPU-accelerated feature search to automate large-scale annotation and object discovery in high-resolution (3m) satellite imagery.
 
 ---
 
 ## 🌍 Overview
 
-**DINO-SAM-Accel** enables *automated detection, labeling, and visual search* across multi-band satellite datasets — empowering geospatial workflows through AI-driven similarity and segmentation refinement.The visual search could include any objects including below 8 classes. 
+**GeoAccel-AI** enables *automated detection, labeling, and visual search* across multi-band satellite datasets — empowering geospatial workflows through AI-driven similarity and segmentation refinement.  
+The visual search can identify and classify diverse infrastructure and terrain categories with minimal human supervision.
 
 Supported object classes:
-
 > Brick Kiln | STP | Solar Panel | Sheds | Metro Shed | Play Ground | Pond-1 | Pond-2
+
 
 ### 🔹 Core Pipelines
 
@@ -27,8 +28,8 @@ Supported object classes:
 
 ---
 ## Yolo Model Training 
-Below is the model metrics trained for 200 epochs.
-As extracted embeddings has some amount of noise , hence its expected to have very less precision . 
+Below are the metrics for a representative YOLOv8 model trained for 200 epochs.  
+Since the extracted embeddings contain a degree of variability, moderate precision is expected — yet sufficient for rapid bootstrapping of geospatial datasets.
 ![Metrics](results/yolo_model_trainig_losses.png)
 *Figure 1: YOLOv8 training loss curves over 200 epochs.*
 
@@ -66,28 +67,28 @@ Includes experimental support for **Agentic GPU Optimization**, orchestrating au
 
 ## 🧠 Research Context
 
-**DINO-SAM-Accel** represents a unified GPU-accelerated geospatial AI workflow that fuses:
+**GeoAccel-AI** represents a unified, GPU-optimized geospatial AI framework that fuses:
+- **Visual distillation** for semantic and texture representation
+- **Segmentation refinement** for pixel-level precision
+- **Agentic profiling & kernel discovery** for dynamic GPU efficiency
 
-* **DINOv2 embeddings** for invariant patch-level representation
-* **SAM2 segmentation refinement** for precision polygonization
-* **Agentic profiling & kernel discovery** for adaptive GPU efficiency
-
-Designed for **researchers and developers in remote sensing, computer vision, and HPC-AI convergence**, it bridges edge inference and cloud-scale analytics for Earth observation intelligence.
+It serves as a bridge between **remote sensing**, **AI-driven automation**, and **edge-to-cloud scalability**, enabling faster Earth observation analytics and infrastructure monitoring.
 
 ---
 
 ## 📄 Citation
 
 ```
-@misc{dino_sam_accel_2025,
-  title  = {DINO-SAM-Accel: GPU-Optimized Auto-Annotation for Satellite Imagery},
+@misc{geoaccel_ai_2025,
+  title  = {GeoAccel-AI: GPU-Optimized Auto-Annotation for Satellite Imagery},
   author = {Atul Vaish},
   year   = {2025},
-  url    = {https://github.com/intelav/DINO-SAM-Accel}
+  url    = {https://github.com/intelav/GeoAccel-AI}
 }
 ```
 
 ---
 
 © 2025 SvarAikyam AI | AI Fusion — Applied Research in GPU Optimization & Geospatial Intelligence
+
 
