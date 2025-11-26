@@ -1,3 +1,23 @@
+#🏆 AI Grand Challenge – Final Submitted Solution
+---
+This project was developed as part of the AI Grand Challenge 2024–25, jointly organized by NTRO (National Technical Research Organization) and IIT Delhi(NCIIPC).
+The challenge focused on large-scale AI-driven geospatial analytics, requiring automated annotation, object discovery, and intelligent search across 3-meter resolution satellite imagery.
+
+GeoAccel-AI (this repository) represents my final end-to-end solution — covering prototype generation, feature distillation, GPU-optimized auto-annotation, segmentation-guided refinement, hybrid DINO + SAM2 embeddings, YOLO training, and competition-ready inference pipelines.
+
+This repository contains:
+---
+The complete codebase used for official submission
+
+Final results on the evaluation dataset
+
+GPU-optimized workflows, profiling reports, and visual search pipelines
+
+All tools built to accelerate annotation workflows during the challenge
+
+![Final Result](results/result.png) 
+*Mapped Score Acheived against the cut-off of 1.100*
+
 # ⚡ GeoAccel-AI: GPU-Optimized Geospatial Annotation
 
 **Accelerating Geospatial Intelligence through distillation, segmentation, and proprietary embeddings.**  
